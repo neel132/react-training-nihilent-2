@@ -29,7 +29,7 @@ app.use((req, res, next) => {
 app.use('/weather', weatherRoutes);
 app.use('/user', userRoutes);
 // app.use('/', dynamicWebpageRoutes);
-app.use('/submit-form', formRoutes)
+app.use('/submit-form', formRoutes);
 app.use('/', express.static(path.join(__dirname, 'public')));
 
 app.listen(port, () => {
